@@ -1,0 +1,129 @@
+body {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: #fff;
+    margin: 40px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(44,62,80,0.16);
+    padding: 32px 36px;
+}
+h2, h3 {
+    margin-top: 0;
+    color: #0b2348;
+    letter-spacing: 0.5px;
+}
+form {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+input[type="text"], select {
+    padding: 7px 10px;
+    border: 1.5px solid #a7a7a7;
+    border-radius: 6px;
+    font-size: 1em;
+    outline: none;
+    transition: border 0.2s;
+}
+input[type="text"]:focus, select:focus {
+    border: 2px solid #1e90ff;
+}
+button {
+    background: linear-gradient(90deg, #1e90ff 60%, #3a7bd5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 14px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    font-size: 1em;
+    font-weight: 500;
+}
+button:hover {
+    background: linear-gradient(90deg, #0062e6 60%, #33aeff 100%);
+    transform: translateY(-2px) scale(1.05);
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 18px;
+}
+li.equipo-card {
+    margin-bottom: 16px;
+    padding: 12px 18px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: linear-gradient(90deg, #e0eafc 0%, #cfdef3 100%);
+    box-shadow: 0 2px 12px rgba(44,62,80,0.09);
+    flex-wrap: wrap;
+}
+li.equipo-card .escudo {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+    object-fit: contain;
+    border: 2px solid #1e90ff33;
+}
+li.equipo-card b {
+    color: #1e3c72;
+    font-size: 1.08em;
+}
+li.equipo-card span.liga {
+    color: #2a5298;
+    font-size: 0.97em;
+}
+li.equipo-card .acciones {
+    margin-left: auto;
+    display: flex;
+    gap: 6px;
+}
+.jugadores-lista {
+    margin-left: 60px;
+    margin-top: 4px;
+    font-size: 0.96em;
+    color: #333;
+    padding-left: 0;
+}
+hr {
+    border: none;
+    border-top: 2px solid #e3e3e3;
+    margin: 24px 0;
+}
+label {
+    font-weight: 500;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 14px 4vw;
+    }
+    button, input[type="text"], select {
+        font-size: 0.97em;
+    }
+    li.equipo-card {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+
+    .escudo {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 12px;
+    background: #fff;
+    border: 2px solid #e0eafc;
+    box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+    vertical-align: middle;
+}
+}

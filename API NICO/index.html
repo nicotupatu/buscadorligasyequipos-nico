@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ligas y Equipos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+<div class="container">
+    <h2>⚽ Ligas de Fútbol</h2>
+    <form id="formLiga">
+        <input type="text" id="nombreLiga" placeholder="Nombre de la liga" required>
+        <button type="submit">Agregar Liga</button>
+    </form>
+    <ul id="listaLigas"></ul>
+    <hr>
+    <h3>Equipos</h3>
+    <form id="formEquipo">
+        <input type="text" id="nombreEquipo" placeholder="Nombre del equipo" required>
+        <select id="ligaEquipo"></select>
+        <button type="submit">Agregar Equipo</button>
+    </form>
+    <ul id="listaEquipos"></ul>
+</div>
+<div class="container">
+
+    <!-- Formulario y lista de jugadores -->
+    <h3>Jugadores</h3>
+    <form id="formJugador">
+        <input type="text" id="nombreJugador" placeholder="Nombre del jugador" required>
+        <input type="text" id="posicionJugador" placeholder="Posición" required>
+        <select id="equipoJugador"></select>
+        <button type="submit">Agregar Jugador</button>
+    </form>
+    <ul id="listaJugadores"></ul>
+</div>
+<script src="crud.js"></script>
+</body>
+</html>
